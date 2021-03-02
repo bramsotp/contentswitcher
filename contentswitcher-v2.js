@@ -10,7 +10,7 @@
  */
 window.contentSwitcherV2 = (function(){
     var extraProperties = {
-        version: '2.0.0-ALPHA-DEV'
+        version: '2.0.0'
     };
 
     var constructorFn = function(contentSetCodes, options) {
