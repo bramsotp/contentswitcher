@@ -2,7 +2,7 @@
 
 /*
     CHANGES
-    mar - add 'use strict'
+    v2.1.0 - add 'use strict'
 
 */
 
@@ -18,7 +18,7 @@
  */
 window.contentSwitcherV2 = (function(){
     var extraProperties = {
-        version: '2.0.0'
+        version: '2.1.0'
     };
 
     var constructorFn = function(contentSetCodes, options) {
