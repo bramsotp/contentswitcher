@@ -1,3 +1,11 @@
+'use strict';
+
+/*
+    CHANGES
+    mar - add 'use strict'
+
+*/
+
 /**
  * Constructor for new contentswitcher object.
  *
