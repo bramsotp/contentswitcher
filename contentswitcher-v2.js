@@ -2,6 +2,7 @@
 
 /*
     CHANGES
+    v2.1.1 - avoid TS lint errors by adding object properties by string key
     v2.1.0 - add 'use strict'
 
 */
@@ -16,7 +17,7 @@
  *   strict: true, false, or undefined (=false). If true, a javascript error will be thrown when a nonexistent contentSet code or content ID is used. If not true, the undefined value will be returned when a nonexistent contentSet code or content ID is used.
  * @return {*} A contentswitcher instance configured with the given options.
  */
-window.contentSwitcherV2 = (function(){
+window['contentSwitcherV2'] = (function(){
     var extraProperties = {
         version: '2.1.0'
     };
@@ -94,10 +95,10 @@ window.contentSwitcherV2 = (function(){
         };
 
         var objPublic = fnGetByMode;
-        objPublic.switch = fnSelectContentSet;
-        objPublic.defer = fnGetDefer;
-        objPublic.get = fnGetImmediate;
-        objPublic.add = fnAdd;
+        objPublic['switch'] = fnSelectContentSet;
+        objPublic['defer'] = fnGetDefer;
+        objPublic['get'] = fnGetImmediate;
+        objPublic['add'] = fnAdd;
         return objPublic;
     };
 
